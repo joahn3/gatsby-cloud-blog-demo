@@ -6,7 +6,7 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Chic Roumaine Blog - Gatsby Theme`,
   },
   plugins: [
     {
@@ -14,7 +14,7 @@ module.exports = {
         options: {
           url: process.env.WPGRAPHQL_URL || `https://shop.chicroumaine.com/graphql`,
         },
-    }
+    },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
