@@ -10,6 +10,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-wordpress-experimental`,
+        options: {
+          url: process.env.WPGRAPHQL_URL || `https://shop.chicroumaine.com/graphql`,
+        },
+    }
+    {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
